@@ -1,8 +1,19 @@
 {
   "dependencies": {
+    "express": "^4.19.2",
     "nodemon": "^3.1.0"
   },
   "scripts": {
-	"start": "nodemon index.js"
-  }
+    "start": "nodemon app.js"
+  },
+  "name": "node-2-homework",
+  "version": "1.0.0",
+  "description": "It's beatiful app",
+  "main": "app.js",
+  "devDependencies": {},
+  "keywords": [
+    "yandex"
+  ],
+  "author": "Steiden",
+  "license": "ISC"
 }
