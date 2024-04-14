@@ -1,17 +1,17 @@
 const http = require('http');
+const path = require('path');
 const staticFile = require("./appModules/http-utils/static-file");
 const mimeTypes = require("./appModules/http-utils/mime-types");
 const mainRouteController = require("./controllers/main");
 const defaultRouteController = require('./controllers/default');
 
 const express = require('express');
-const path = require('path');
 const gameRouteController = require('./controllers/game');
 const voteRouteController = require('./controllers/vote');
 
 const app = express();
-app.use(express.static(path.join(__dirname, 'public')));
 
+app.use(express.static(path.join(__dirname, 'public')));
 
 app.get("/", (req, res) => {
 	mainRouteController(res, "/index.html", ".html");
@@ -49,5 +49,5 @@ app.get("*", (req, res) => {
 // });
 
 // server.listen(3000);
-const port = process.env.SERVER_PORT || 3000;
+const port = process.env.SERVER_PORT || 3005;
 app.listen(port, () => console.log(`App listening on port ${port}!`));
