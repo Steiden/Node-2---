@@ -1,17 +1,15 @@
 {
   "dependencies": {
-    "express": "^4.19.2",
     "nodemon": "^3.1.0"
   },
   "scripts": {
     "dev": "nodemon app.js",
-	"start": "node app.js"
+    "start": "node app.js"
   },
   "name": "node-2-homework",
   "version": "1.0.0",
   "description": "It's beatiful app",
   "main": "app.js",
-  "devDependencies": {},
   "keywords": [
     "yandex"
   ],
